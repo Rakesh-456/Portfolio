@@ -1,150 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakesh Paragada | Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Rakesh Paragada, Java Full Stack Developer specializing in Spring Boot and backend development." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons only, no JS behavior used) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
-
 <body>
 
-    <header class = "header">
-        <a href="#" class="logo">Rakesh Paragada</a>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- ============ NAVBAR ============ -->
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
 
-        <a href="https://github.com/Rakesh-456" 
-        class="github-btn" 
-        target="_blank">
-            Visit Github
-        </a>
-        <i class="fa-solid fa-bars" id="menu-toggle"></i>
-        
-    </header>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="nav-logo">Rakesh Paragada</a>
 
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <section class="hero" id="about">
-        <div class="hero-image">
-            <img src="praboss.jpg" alt="Bahu">
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener" class="btn btn-gradient nav-github">
+        Visit GitHub
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero section">
+      <div class="hero-image-wrap">
+        <div class="hero-image-ring">
+          <img src="praboss.jpg" alt="Portrait of Rakesh Paragada" class="hero-image" />
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Rakesh Paragada</h1>
+        <h2 class="hero-role gradient-text">Java Full Stack Developer</h2>
+        <p class="hero-summary">
+          Entry-level software engineer building reliable, scalable applications with Java and Spring Boot,
+          backed by strong fundamentals in OOP, data structures, and database design.
+        </p>
+
+        <div class="hero-actions">
+          <a href="RAKESH PARAGADA RESUME (1) (1).pdf" download class="btn btn-gradient">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
         </div>
 
-        <div class="hero-content">
-            <p class="greeting">
-                Hi, I'm
+        <div class="hero-socials">
+          <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/rakesh-paragada" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="mailto:rakeshparagada2004@gmail.com" aria-label="Email Rakesh">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Computer Science and Engineering graduate from
+          <strong>MVGR College of Engineering, Vizianagaram, Andhra Pradesh</strong>, with a focused interest in
+          <strong>Java Full Stack Development</strong>. I enjoy working across the stack, but I'm most drawn to
+          backend development &mdash; designing clean APIs, structuring reliable data models, and making systems
+          that hold up under real-world use.
+        </p>
+        <p class="about-text">
+          Alongside backend work, I'm comfortable building the front-facing side of an application with HTML, CSS,
+          and JavaScript, which helps me understand a product end to end. I like building real-world applications,
+          not just following tutorials, and I'm constantly learning new tools and technologies to keep improving
+          how I write and structure code.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Full Stack Grounding</h3>
+            <p>Comfortable across Java backends and HTML/CSS/JS frontends.</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Minded</h3>
+            <p>Strong DBMS fundamentals with hands-on MySQL experience.</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Always Learning</h3>
+            <p>Continuously building projects to pick up new technologies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <p class="section-eyebrow">Toolbox</p>
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+          </div>
+          <p>Core language for backend logic, OOP design, and application development.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 85%;"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>Spring Boot</h3>
+          </div>
+          <p>Building REST APIs and backend services with Spring Boot fundamentals.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 75%;"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML</h3>
+          </div>
+          <p>Semantic, accessible markup as the foundation for every interface I build.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 90%;"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </div>
+          <p>Responsive layouts using Flexbox, Grid, and modern styling techniques.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 85%;"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <p>Adding interactivity and dynamic behavior to web pages.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 70%;"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-database"></i>
+            <h3>MySQL</h3>
+          </div>
+          <p>Designing schemas, writing queries, and integrating databases with applications.</p>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 80%;"></div></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE & LEARNING ============ -->
+    <section id="experience" class="section">
+      <p class="section-eyebrow">Growth</p>
+      <h2 class="section-title">Experience &amp; Learning</h2>
+
+      <div class="learning-grid">
+        <div class="learning-card">
+          <i class="fa-brands fa-java"></i>
+          <h3>Java Development</h3>
+          <p>Writing clean, object-oriented Java for real application logic.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-solid fa-server"></i>
+          <h3>Spring Boot Backend</h3>
+          <p>Building backend services and application structure with Spring Boot.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-solid fa-plug"></i>
+          <h3>REST API Development</h3>
+          <p>Designing and consuming REST APIs for client-server communication.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Database Integration</h3>
+          <p>Connecting applications to MySQL for persistent, structured data.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Frontend Development</h3>
+          <p>Building interfaces with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-brands fa-git-alt"></i>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control and collaborative workflows for every project.</p>
+        </div>
+        <div class="learning-card">
+          <i class="fa-solid fa-diagram-project"></i>
+          <h3>Project-Based Learning</h3>
+          <p>Learning by building complete, working applications end to end.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt">
+      <p class="section-eyebrow">Portfolio</p>
+      <h2 class="section-title">Recent Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="grocery-IMG.webp" alt="RuralMart application screenshot" class="project-image" />
+          </div>
+          <div class="project-body">
+            <h3>RuralMart</h3>
+            <p>
+              A rural grocery shopping application built with Spring Boot and Java, providing full product
+              management and CRUD functionality for a local grocery shop.
             </p>
-            <h1>
-                Rakesh Paragada
-            </h1>
-            <h2>
-                Java Full Stack Developer
-            </h2>
-
-            <div class="hero-buttons">
-                <a href="RAKESH PARAGADA RESUME (1).pdf"
-                   download
-                   class="outline-btn">
-                    Download CV
-                </a><br>
-
-                <a href="#contact"
-                   class="outline-btn">
-                    Contact
-                </a>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
             </div>
-
-            <div class="social-links">
-                <a href="https://github.com/Rakesh-456"
-                   target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/rakesh-paragada/"
-                   target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline-sm">Live Demo</a>
+              <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener" class="btn btn-outline-sm">GitHub Repo</a>
             </div>
-        </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card-dark">
+          <div class="project-image-wrap">
+            <img src="project-2.jpg" alt="Attendance Management System hardware setup" class="project-image" />
+          </div>
+          <div class="project-body">
+            <h3>Attendance Management System</h3>
+            <p>
+              An IoT-based attendance system built on Raspberry Pi to automate attendance capture and
+              management, reducing manual tracking effort.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">IoT</span>
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline-sm">Live Demo</a>
+              <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener" class="btn btn-outline-sm">GitHub Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="project-3.jpg" alt="Secure File Storage System interface" class="project-image" />
+          </div>
+          <div class="project-body">
+            <h3>Secure File Storage System</h3>
+            <p>
+              A secure file storage solution using Python and AES encryption to protect sensitive files, with
+              user-defined secret keys for encryption and decryption.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Encryption</span>
+              <span class="tag">File Handling</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-outline-sm">Live Demo</a>
+              <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener" class="btn btn-outline-sm">GitHub Repo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h1 class="projects-title">Recent Projects</h1>
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="grocery-IMG.webp" alt="Project RUARALMART">
-                </div>
-                <h2>Project X</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Placeat, officia.
-                </p>
-                <div class="project-buttons">
-                    <a href="#" class="project-btn">
-                        Live Demo
-                    </a>
-                    <a href="#" class="project-btn">
-                        Github Repo
-                    </a>
-                </div>
-            </div>
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+      <p class="section-eyebrow">Background</p>
+      <h2 class="section-title">Education</h2>
 
-            <div class="project-card dark-card">
-
-                <div class="project-image">
-                    <img src="project-2.jpg" alt="Project Y">
-                </div>
-
-                <h2>Project Y</h2>
-
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Placeat, officia.
-                </p>
-
-                <div class="project-buttons">
-                    <a href="#" class="project-btn">
-                        Live Demo
-                    </a>
-                    <a href="#" class="project-btn">
-                        Github Repo
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="project-3.jpg" alt="Project Z">
-                </div>
-
-                <h2>Project Z</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Placeat, officia.
-                </p>
-
-                <div class="project-buttons">
-                    <a href="#" class="project-btn">
-                        Live Demo
-                    </a>
-                    <a href="#" class="project-btn">
-                        Github Repo
-                    </a>
-                </div>
-
-            </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2022 &ndash; 2026</span>
+            <h3>B.Tech &ndash; Computer Science &amp; Engineering</h3>
+            <p class="timeline-sub">MVGR College of Engineering, Vizianagaram, Andhra Pradesh</p>
+            <p>
+              Specialization track in IoT &amp; Cybersecurity, with coursework spanning OOP, data structures,
+              DBMS, and REST APIs alongside hands-on project work.
+            </p>
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2020 &ndash; 2022</span>
+            <h3>Intermediate (MPC)</h3>
+            <p class="timeline-sub">Gayatri Junior College, Gotlam</p>
+            <p>Mathematics, Physics, and Chemistry &mdash; 90%.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2019 &ndash; 2020</span>
+            <h3>SSC</h3>
+            <p class="timeline-sub">97%</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt">
+      <p class="section-eyebrow">Get in touch</p>
+      <h2 class="section-title">Let's Work Together</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>
+            I'm actively looking for opportunities in Java Full Stack and backend development. Feel free to
+            reach out &mdash; I'd love to hear from you.
+          </p>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:rakeshparagada2004@gmail.com">rakeshparagada2004@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener">github.com/Rakesh-456</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://linkedin.com/in/rakesh-paragada" target="_blank" rel="noopener">linkedin.com/in/rakesh-paragada</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="btn btn-gradient contact-submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name">Rakesh Paragada</p>
+        <p class="footer-role">Java Full Stack Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/Rakesh-456" target="_blank" rel="noopener">GitHub</a>
+        <span class="footer-divider">|</span>
+        <a href="https://linkedin.com/in/rakesh-paragada" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <p class="footer-copy">&copy; 2026 Rakesh Paragada. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
